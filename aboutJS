@@ -1,0 +1,191 @@
+// In this example, "y" is a variable that can be reassigned, while "z" is a constant that cannot be reassigned.
+let y = 20;
+const z = 30;
+
+
+// Data Types
+// In JavaScript, there are several data types that you can use to store different types of data. Some common data types include:
+
+// Numbers (e.g. 10, 3.14)
+// Strings (e.g. "hello", 'world')
+// Booleans (e.g. true, false)
+// Arrays (e.g. [1, 2, 3])
+// Objects (e.g. { name: "John", age: 30 })
+
+
+
+// Variable Naming Rules
+// Variable names can only contain letters, digits, underscores, and dollar signs.
+// Variable names cannot start with a digit.
+// Variable names are case-sensitive.
+
+
+//var let and const
+// variables declared with "var" are accessible within the entire function in which they are declared, rather than just within the block of code in which they appear.
+// "let" variables are block-scoped, which means that they are only accessible within the block of code in which they are declared
+// "const" variables must be initialized with a value when they are declared and cannot be reassigned later.
+
+//Objects
+// Objects are the key value pair
+// let obj = { name: "John", age: 30 };
+// obj.age = 31; // the age property of obj is now 31
+
+
+//Operators
+// Arithmetic operators (e.g. +, -, *, /, %)
+// Comparison operators (e.g. >, <, >=, <=, ==, !=)
+// Logical operators (e.g. &&, ||, !)
+// Assignment operators (e.g. =, +=, -=, *=, /=)
+// Conditional (ternary) operator (e.g. ?:)
+
+
+//if-else
+
+// let x = 10;
+// if (x > 5) {
+//   console.log("x is greater than 5");
+// } else {
+//   console.log("x is not greater than 5");
+// }
+
+
+// If else ladder
+// let x = 10;
+// if (x > 15) {
+//   console.log("x is greater than 15");
+// } else if (x > 10) {
+//   console.log("x is greater than 10 but less than or equal to 15");
+// } else if (x > 5) {
+//   console.log("x is greater than 5 but less than or equal to 10");
+// } else {
+//   console.log("x is less than or equal to 5");
+// }
+
+
+//Switch case statements
+// let x = "apple";
+// switch (x) {
+//   case "apple":
+//     console.log("x is an apple");
+//     break;
+//   case "banana":
+//     console.log("x is a banana");
+//     break;
+//   case "orange":
+//     console.log("x is an orange");
+//     break;
+//   default:
+//     console.log("x is something else");
+// }
+
+
+// Ternary Operator
+// The ternary operator is a shorthand way to write an if-else statement in JavaScript. It takes the form of "condition ? value1 : value2", where condition is a boolean expression, and value1 and value2 are expressions of any type. If condition is true, the ternary operator returns value1; if condition is false, it returns value2.
+// max = (x > y) ? x : y;
+
+
+// For Loops
+// 1. Standard for loop
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+//   }
+
+// 2. For-in loop (used for objects)
+// The variable is assigned to the name of each property in the object and the loop iterates over them.
+// let person = {
+//     name: "John",
+//     age: 30,
+//     job: "developer"
+//   };
+  
+//   for (let key in person) {
+//     console.log(key + ": " + person[key]);
+//   }
+
+// 3. For-of loop (used for arrays)
+// The variable is assigned the value of each element in the object as the loop iterates over them.
+// let numbers = [1, 2, 3, 4, 5];
+
+// for (let number of numbers) {
+//   console.log(number);
+// }
+
+// 4. ForEach method (used for arrays)
+// var myArray = [1, 2, 3, 4, 5];
+// myArray.forEach(function(element) {
+//     console.log(element);
+// });
+
+//Functions
+// function square(x) {
+//     return x * x;
+//   }
+
+
+
+//strings
+// A string in JavaScript is a sequence of characters enclosed in either single or double quotes.
+
+// var str = "Hello World";
+// console.log(str.length); // returns no of characters in the string
+
+// var str1 = "Hello";
+// var str2 = " World";
+// console.log(str1.concat(str2)); // concat is used for concatination of two strings
+
+// var str = "Hello World";
+// console.log(str.indexOf("W")); // indexOf is used to find the index of specific character or number
+
+// var str = "Hello World";
+// console.log(str.slice(6)); //slice is used to extract portion of the string
+
+// var str = "Hello World";
+// console.log(str.replace("World", "Universe")); 
+
+// var str = "Hello World";
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+
+
+// Arrays and Array Methods
+
+// length - This method returns the number of elements in an array.
+//  For example, the following code will return 3:
+// var myArray = [1, "Hello", [2, 3]];
+// console.log(myArray.length);
+
+// push - This method is used to add an element to the end of an array.
+//  For example, the following code will add the element "World" to the end of the array:
+// var myArray = [1, "Hello", [2, 3]];
+// myArray.push("World");
+// console.log(myArray); // [1, "Hello", [2, 3], "World"]
+
+// pop - This method is used to remove the last element of an array.
+//  For example, the following code will remove the last element ("World") from the array:
+// var myArray = [1, "Hello", [2, 3], "World"];
+// myArray.pop();
+// console.log(myArray); // [1, "Hello", [2, 3]]
+
+// shift - This method is used to remove the first element of an array.
+//  For example, the following code will remove the first element (1) from the array:
+// var myArray = [1, "Hello", [2, 3]];
+// myArray.shift();
+// console.log(myArray); // ["Hello", [2, 3]]
+
+// unshift - This method is used to add an element to the beginning of an array.
+//  For example, the following code will add the element 0 to the beginning of the array:
+// var myArray = [1, "Hello", [2, 3]];
+// myArray.unshift(0);
+// console.log(myArray); // [0, 1, "Hello", [2, 3]]
+
+// slice - This method is used to extract a portion of an array.
+//  For example, the following code will extract the elements from index 1 to 2 (exclusive):
+// var myArray = [1, "Hello", [2, 3]];
+// console.log(myArray.slice(1, 2)); // ["Hello"]
+ 
+
+// splice - This method is used to add or remove elements from an array. For example, the following code will remove the element at index 1 and add the elements "Hello World" and [4, 5] at index 1:
+// var myArray = [1, "Hello", [2, 3]];
+// myArray.splice(1, 1);
+// console.log(myArray);
